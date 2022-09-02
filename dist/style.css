@@ -12,7 +12,7 @@ html, body {
   align-items: center;
   padding: 0;
   margin: 0;
-  background-color: #d1d1d1;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   border-top: solid 20px rgba(0, 0, 255, 0.3);
   border-bottom: solid 20px rgba(0, 0, 255, 0.3);
   box-sizing: border-box;
@@ -55,14 +55,20 @@ html, body {
   50% {
     width: 50px;
     height: 50px;
-    border-width: 30px;
+    border-width: 26px;
     border-color: LightSeaGreen;
+  }
+  80% {
+    border-width: 15px;
+    border-style: dashed dotted;
+    border-color: BlueViolet;
   }
   100% {
     width: 100px;
     height: 100px;
     border-width: 10px;
     transform: translateX(200px);
+    border-style: solid;
     border-color: transparent;
     opacity: 0.1;
   }
@@ -75,14 +81,20 @@ html, body {
   50% {
     width: 50px;
     height: 50px;
-    border-width: 30px;
+    border-width: 26px;
     border-color: LightSeaGreen;
+  }
+  80% {
+    border-width: 15px;
+    border-style: dashed dotted;
+    border-color: BlueViolet;
   }
   100% {
     width: 100px;
     height: 100px;
     border-width: 10px;
     transform: translateX(200px);
+    border-style: solid;
     border-color: transparent;
     opacity: 0.1;
   }
@@ -99,8 +111,8 @@ html, body {
   transform: rotate(72deg);
 }
 .container2 .star {
-  -webkit-animation-delay: -0.5s;
-          animation-delay: -0.5s;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
 }
 
 .container3 {
@@ -115,48 +127,48 @@ html, body {
   transform: rotate(144deg);
 }
 .container4 .star {
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
 }
 
 .container5 {
   transform: rotate(180deg);
 }
 .container5 .star {
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
 }
 
 .container6 {
   transform: rotate(216deg);
 }
 .container6 .star {
-  -webkit-animation-delay: -0.1666666667s;
-          animation-delay: -0.1666666667s;
+  -webkit-animation-delay: -0.3333333333s;
+          animation-delay: -0.3333333333s;
 }
 
 .container7 {
   transform: rotate(252deg);
 }
 .container7 .star {
-  -webkit-animation-delay: -0.2857142857s;
-          animation-delay: -0.2857142857s;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
 }
 
 .container8 {
   transform: rotate(288deg);
 }
 .container8 .star {
-  -webkit-animation-delay: -0.375s;
-          animation-delay: -0.375s;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
 }
 
 .container9 {
   transform: rotate(324deg);
 }
 .container9 .star {
-  -webkit-animation-delay: -0.8888888889s;
-          animation-delay: -0.8888888889s;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
 }
 
 .container10 {
@@ -179,7 +191,7 @@ html, body {
   font-weight: 100;
   color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 20px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 .namecard h2 {
