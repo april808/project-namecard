@@ -1,0 +1,139 @@
+$colorText: rgba(0, 0, 255, 0.5)
+$colorBorder: rgba(0, 0, 255, 0.3)
+$colorCircle: #fdbb2d
+$colorCircleBorder: solid 3px SandyBrown
+
+= size($w,$h:$w)
+  width: $w
+  height: $h
+= poA($L:auto,$T:auto)
+  position: absolute
+  left: $L
+  top: $T
+  
+*
+  // border: 1px solid white
+  font-family: 微軟正黑體
+  position: relative
+  
+html,body
+  +size(100%)
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 0
+  margin: 0
+  background-color: #d1d1d1
+  border-top: solid 20px $colorBorder
+  border-bottom: solid 20px $colorBorder
+  box-sizing: border-box
+  overflow: hidden
+  
+  
+.starbox
+  // position: relative
+  position: absolute
+.star
+  +size(20px)
+  border-radius: 50%
+  border-width: 10px
+  border: 5px dotted DarkKhaki
+  position: absolute
+  animation: starani 2s infinite
+  &::before
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    content: "\f621"
+    font-size: 2em
+    color: Gold
+    text-align: center
+    box-sizing: border-box
+    +poA(0,50%)
+    transform: translate(0%,-50%)
+    transition: all 2s
+  
+@keyframes starani
+  0%
+    transform: translateX(0px)
+  50%
+    +size(50px)
+    border-width: 30px
+    border-color: LightSeaGreen
+  100%
+    +size(100px)
+    border-width: 10px
+    transform: translateX(200px)
+    border-color: transparent
+    opacity: 0.1
+  
+@for $i from 1 through 10
+  $time: random($i)/$i
+  
+  .container#{$i}
+    transform: rotate(#{$i*360/10}deg)
+    .star
+      animation-delay: -#{$time}s
+
+.namecard
+  +size(200px,350px)
+  padding: 20px
+  margin-top: 100px
+  background-color: rgba(white,0.2)
+  backdrop-filter: blur(10px)
+  -webkit-backdrop-filter: blur(10px)
+  letter-spacing: 1px
+  font-weight: 100
+  color: rgba(0, 0, 0, 0.5)
+  overflow: hidden
+  border-radius: 6px
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2)
+
+  h2
+    font-size: 25px
+    font-weight: 700
+    color: $colorText
+
+    span
+      font-size: 12px
+
+  h5
+    color: $colorText
+    font-weight: 600
+
+  p
+    font-size: 12px
+    light-height: 22px
+
+.circle
+  width: 100px
+  height: 100px
+  border-radius: 100%
+  position: absolute
+
+.circle1
+  right: 100px
+  background-color: $colorCircle
+
+.circle2
+  width: 60px
+  height: 60px
+  right: -30px
+  top: -30px
+  border: solid 3px $colorText
+
+.circle3
+  width: 230px
+  height: 220px
+  right: 180px
+  top: -110px
+  background-color: $colorCircle
+  border: $colorCircleBorder
+
+h2, h5, hr
+  z-index: 1
+
+.page_title
+  text-align: center
+  color: #555
+  letter-spacing: 3px
+  font-weight: 500
