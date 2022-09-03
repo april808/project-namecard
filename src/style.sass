@@ -74,7 +74,7 @@ html,body
     opacity: 0.1
   
 @for $i from 1 through 10
-  $time: random($i)/$i
+  $time: random(10)/$i
   
   .container#{$i}
     transform: rotate(#{$i*360/10}deg)

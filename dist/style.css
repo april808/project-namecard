@@ -103,56 +103,56 @@ html, body {
   transform: rotate(36deg);
 }
 .container1 .star {
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
 }
 
 .container2 {
   transform: rotate(72deg);
 }
 .container2 .star {
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+  -webkit-animation-delay: -4.5s;
+          animation-delay: -4.5s;
 }
 
 .container3 {
   transform: rotate(108deg);
 }
 .container3 .star {
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+  -webkit-animation-delay: -1.6666666667s;
+          animation-delay: -1.6666666667s;
 }
 
 .container4 {
   transform: rotate(144deg);
 }
 .container4 .star {
-  -webkit-animation-delay: -0.75s;
-          animation-delay: -0.75s;
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
 }
 
 .container5 {
   transform: rotate(180deg);
 }
 .container5 .star {
-  -webkit-animation-delay: -0.4s;
-          animation-delay: -0.4s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
 }
 
 .container6 {
   transform: rotate(216deg);
 }
 .container6 .star {
-  -webkit-animation-delay: -0.3333333333s;
-          animation-delay: -0.3333333333s;
+  -webkit-animation-delay: -1.1666666667s;
+          animation-delay: -1.1666666667s;
 }
 
 .container7 {
   transform: rotate(252deg);
 }
 .container7 .star {
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+  -webkit-animation-delay: -0.4285714286s;
+          animation-delay: -0.4285714286s;
 }
 
 .container8 {
