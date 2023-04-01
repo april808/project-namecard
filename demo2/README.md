@@ -5,7 +5,7 @@ A Pen created on CodePen.io.
 預覽：
 
 1. CodePen URL: [https://codepen.io/april808/pen/dyeyMmP](https://codepen.io/april808/pen/dyeyMmP).
-1. GitHub: [動態煙花圖片](https://april808.github.io/project-namecard/demo2/dist/index.html)
+1. GitHub: [動態煙花名片](https://april808.github.io/project-namecard/demo2/dist/index.html)
 
 
 說明：
